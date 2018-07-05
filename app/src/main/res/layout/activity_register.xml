@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.registrationform.register">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:text="Please fill out the form correctly"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/mysurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView8"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/mylastname"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mysurname"
+        android:layout_alignStart="@+id/mysurname"
+        android:layout_below="@+id/mysurname"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/mypassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mylastname"
+        android:layout_alignStart="@+id/mylastname"
+        android:layout_below="@+id/mylastname"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/mydob"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mypassword"
+        android:layout_alignStart="@+id/mypassword"
+        android:layout_below="@id/mypassword"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+
+
+    <EditText
+        android:id="@+id/mysch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mydob"
+        android:layout_alignStart="@+id/mydob"
+        android:layout_below="@+id/mydob"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/mydept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mysch"
+        android:layout_alignStart="@+id/mysch"
+        android:layout_below="@+id/mysch"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:background="@color/background"
+        android:text="submit"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mylastname"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:text="SURNAME"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mylastname"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:text="LASTNAME"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mypassword"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10"
+        android:text="PASSWORD"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mydob"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:text="DATE OF BIRTH"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mysch"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12"
+        android:text="SCHOOL"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mydept"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13"
+        android:text="DEPARTMENT"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+</RelativeLayout>
